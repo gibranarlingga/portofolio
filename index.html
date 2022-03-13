@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title> Creating Navbar Dan Layout</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!--START NAVBAR-->
+    <nav>
+        <!-- LEFT -->
+        <div class="left-side">
+            <img src="assets/logo.png">
+            <ul>
+                <li><a href="Creating Layout dan Navbar.html">Home</li></a>
+                    <li><a href="MyProject.html">My Project</li></a>
+            </ul>
+        </div>
+        <!-- RIGHT -->
+        <div class="right-side">
+            <a href="Contact me.html">Contact Me</a>
+        </div>
+
+    </nav>
+    <!--LAST NAVBAR-->
+    <div class="blog-form">
+        <div class="form-container">
+            <form onsubmit="addBlog(event)">
+                <h2>ADD MY PROJECT</h2>
+                <div class="title">
+                    <label for="input-blog-title">Project Name</label>
+                    <input id="input-blog-title">
+                </div>
+                <div class="date">
+                    <div class="date-a">
+                        <label for="input-blog-date">Start Date</label>
+                        <input type="date" id="input-blog-date-s">
+                    </div>
+                    <div class="date-b">
+                        <label for="input-blog-date">End Date</label>
+                        <input type="date" id="input-blog-date-l">
+                    </div>
+                </div>
+                <div>
+                    <label for="input-blog-content">Description</label>
+                    <textarea id="input-blog-content"></textarea>
+                </div>
+                <div>
+                    <label for="input-blog-technologies">Technologies</label>
+                </div>
+                <div class="tech">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="nodejs" />
+                            <label for="myCheckbox1">Node Js</label>
+                            <input type="checkbox" id="nextjs" />
+                            <label for="myCheckbox2">Next Js</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="reactjs" />
+                            <label for="myCheckbox3">React Js</label>
+                            <input type="checkbox" id="typescript" />
+                            <label for="myCheckbox4">TypeScript</label>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label>Upload Image</label>
+                    <div class="input-blog-image-group">
+                        <label for="input-blog-image">
+                          <p>choose</p>
+                          <img src="assets/file.png" alt="file" />
+                        </label>
+                        <input type="file" id="input-blog-image" hidden />
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="addBlog()">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <h1>MY PROJECT</h1>
+    <div class="myproject" id="content">
+        <!-- dynamic content would be here -->
+        <div class="container-projects">
+            <div class="flex-container">
+                <div class="card">
+                    <img src="assets/logo1.jpg">
+                    <h2><a href="fullMyProject.html" target="_blank">Dumbways Mobile App = 2021</h2></a>
+                        <div style="color: gray;">
+                            durasi : 3 bulan
+                        </div>
+                        <p>Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak</p>
+                        <div class="logo">
+                            <img src="assets/node.png" />
+                            <img src="assets/next.png" />
+                            <img src="assets/react.png" />
+                            <img src="assets/type.png" />
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn-edit">Edit</a>
+                            <a href="#" class="btn-delete">Delete</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="blog.js"></script>
+</body>
+
+</html>

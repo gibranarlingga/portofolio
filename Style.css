@@ -223,7 +223,11 @@ nav .right-side a {
     cursor: pointer;
 }
 
-h1 {
+.bg {
+    background: rgb(248, 248, 248);
+}
+
+.bg h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -231,7 +235,6 @@ h1 {
 }
 
 .myproject {
-    background: rgb(248, 248, 248);
     display: flex;
     flex-wrap: wrap;
 }
